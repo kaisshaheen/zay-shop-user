@@ -10,7 +10,7 @@ const Shop = () => {
   const [product , setProduct] = useState([])
 
   async function getProduct() {
-    const res = await fetch("/api/product")
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/product`)
     const data = await res.json()
 
     if(res.ok){

@@ -8,7 +8,7 @@ const Order = () => {
 
 
   async function getOrders() {
-    const res = await fetch("/api/orders" , {
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/orders` , {
       headers : {
         Authorization : `Bearer ${token}`
       }

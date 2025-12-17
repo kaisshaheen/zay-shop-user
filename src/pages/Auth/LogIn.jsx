@@ -13,7 +13,7 @@ const LogIn = () => {
   
   async function handleLogin(e) {
     e.preventDefault()
-    const res = await fetch("/api/login" , {
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/login` , {
       method : "post" ,
       body : JSON.stringify(formData)
     }

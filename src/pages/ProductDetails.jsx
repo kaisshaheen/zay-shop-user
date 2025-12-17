@@ -41,7 +41,7 @@ const ProductDetails = () => {
         async function addToCart(e) {
           e.preventDefault()
 
-          const res= await fetch(`/api/cart/${id}` , {
+          const res= await fetch(`${import.meta.env.VITE_API_URL}/cart/${id}` , {
             method : "post",
             body : JSON.stringify(formData),
             headers : {
@@ -58,7 +58,7 @@ const ProductDetails = () => {
         }
 
         async function getProduct() {
-            const res = await fetch(`/api/product/${id}`)
+            const res = await fetch(`${import.meta.env.VITE_API_URL}/product/${id}`)
             if(res.ok){
               const data =await res.json()
               setProduct(data.products)   
@@ -87,7 +87,7 @@ const ProductDetails = () => {
     
       return (
         <>
-        //{alert.visible && <div className="text-center text-2xl text-blue-700 capitalize">{alert.message}</div>}
+        {alert.visible && <div className="text-center text-2xl text-blue-700 capitalize">{alert.message}</div>}
         <div className='container mx-auto flex justify-center items-start space-x-9 my-28'>
           <div className='w-[35%]  shadow-2xl border border-gray-200'>
             <img className="w-full h-[430px]" src={`${BackEnd_Url}${product?.image_path}`} />

@@ -8,7 +8,7 @@ const AppProvider = ({children}) => {
     const [token , setToken] = useState(localStorage.getItem("token"))
 
     async function getUser() {
-         const res = await fetch("/api/users" , {
+         const res = await fetch(`${import.meta.env.VITE_API_URL}/users` , {
             headers : {
                  Authorization : `Bearer ${token}`
              } 

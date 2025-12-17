@@ -19,7 +19,7 @@ const UpdateCart = () => {
 
 
   async function getCartItem() {
-    const res = await fetch(`/api/cart/${id}` , {
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/cart/${id}` , {
       headers : {
         Authorization : `Bearer ${token}`
       }
@@ -39,7 +39,7 @@ const UpdateCart = () => {
 
   async function handleUpdate(e) {
     e.preventDefault()
-    const res = await fetch(`/api/cart/update/${productID}` , {
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/cart/update/${productID}` , {
       method : "put",
       body : JSON.stringify(formData),
       headers : {

@@ -18,7 +18,7 @@ const SignUp = () => {
     
     async function handleRegister(e) {
       e.preventDefault()
-      const res = await fetch("/api/register" , {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/register` , {
         method : "post" ,
         body : JSON.stringify(formData)
       }

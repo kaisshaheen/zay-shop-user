@@ -16,7 +16,7 @@ const Cart = () => {
   const navigate = useNavigate()
 
   async function getCart() {
-    const res = await fetch("/api/cart" , {
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/cart` , {
       headers : {
         Authorization : `Bearer ${token}`
       }
@@ -31,7 +31,7 @@ const Cart = () => {
 
   async function checkout(e){
     e.preventDefault()
-    const res = await fetch("/api/checkout" , {
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/checkout` , {
       method : "post",
       body : JSON.stringify(formData),
       headers : {
@@ -49,7 +49,7 @@ const Cart = () => {
 
   async function handleDelete(e , itemId) {
       e.preventDefault()
-      const res = await fetch(`/api/cart/remove/${itemId}`,{
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/cart/remove/${itemId}`,{
         method : "delete",
         headers : {
           Authorization : `Bearer ${token}`
@@ -63,7 +63,7 @@ const Cart = () => {
 
     async function handleClear(e) {
       e.preventDefault()
-      const res = await fetch("/api/cart/clear",{
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/cart/clear`,{
         method : "delete",
         headers : {
           Authorization : `Bearer ${token}`
