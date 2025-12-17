@@ -65,7 +65,7 @@ const Hero = () => {
                   </p>
                 </div>
                 <div className='w-1/2'>
-                  <img src="src/img/banner_img_03.jpg" alt="hero" />
+                  <img src="/img/banner_img_03.jpg" alt="hero" />
                 </div>  
                 <button onClick={nextDiv}><FaChevronRight className="text-[#83b38f] text-5xl font-[900] hover:text-[#59ab6e] transition-all duration-500"/></button>
               </div>

@@ -11,16 +11,16 @@ const OurBrands = () => {
           </p>
           <div className="flex justify-center gap-10 mt-5">
             <div className="w-1/10">
-              <Link><img src="/src/img/brand_01.png" alt="" /></Link>
+              <Link><img src="/img/brand_01.png" alt="" /></Link>
             </div>
             <div className="w-1/10">
-              <Link><img src="/src/img/brand_02.png" alt="" /></Link>
+              <Link><img src="/img/brand_02.png" alt="" /></Link>
             </div>
             <div className="w-1/10">
-              <Link><img src="/src/img/brand_03.png" alt="" /></Link>
+              <Link><img src="/img/brand_03.png" alt="" /></Link>
             </div>
             <div className="w-1/10">
-              <Link><img src="/src/img/brand_04.png" alt="" /></Link>
+              <Link><img src="/img/brand_04.png" alt="" /></Link>
             </div>
           </div>
         </div>

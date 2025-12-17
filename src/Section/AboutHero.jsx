@@ -12,7 +12,7 @@ const AboutHero = () => {
                 </p>
             </div>
             <div className='w-1/3'>
-                <img src="/src/img/about-hero.svg" alt="" />
+                <img src="/img/about-hero.svg" alt="" />
             </div>
         </div>
     </div>

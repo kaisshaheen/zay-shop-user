@@ -9,9 +9,9 @@ const ProductSection = () => {
           Excepteur sint occaecat cupidatat non proident.
         </p>
         <div className="container mx-auto flex justify-center items-center gap-5">
-          <Product img = "/src/img/feature_prod_01.jpg" name = "Gym Weight" description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt." price = "240.00"/>
-          <Product img = "/src/img/feature_prod_02.jpg" name = "Cloud Nike Shoes" description = "Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo ullamcorper." price = "480.00"/>
-          <Product img = "/src/img/feature_prod_03.jpg" name = "Summer Addides Shoes" description = "Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec." price = "360.00"/>
+          <Product img = "/img/feature_prod_01.jpg" name = "Gym Weight" description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt." price = "240.00"/>
+          <Product img = "/img/feature_prod_02.jpg" name = "Cloud Nike Shoes" description = "Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo ullamcorper." price = "480.00"/>
+          <Product img = "/img/feature_prod_03.jpg" name = "Summer Addides Shoes" description = "Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec." price = "360.00"/>
         </div>
       </div>
   )

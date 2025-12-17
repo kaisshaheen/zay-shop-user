@@ -19,7 +19,7 @@ const Shop = () => {
   }
 
   async function getCatgories() {
-    const res = await fetch("/api/category")
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/category`)
     const data = await res.json()
 
     if(res.ok){

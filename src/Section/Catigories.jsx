@@ -11,9 +11,9 @@ const Catigories = () => {
           deserunt mollit anim id est laborum.
         </p>
         <div className="my-9 flex justify-center items-start gap-10">
-          <Category name = "Watches" img = "/src/img/category_img_01.jpg"/>
-          <Category name = "Shoes" img = "/src/img/category_img_02.jpg"/>
-          <Category name = "Accessories" img = "/src/img/category_img_03.jpg"/>
+          <Category name = "Watches" img = "/img/category_img_01.jpg"/>
+          <Category name = "Shoes" img = "/img/category_img_02.jpg"/>
+          <Category name = "Accessories" img = "/img/category_img_03.jpg"/>
         </div>
       </div>
   )
